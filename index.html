@@ -1,25 +1,82 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Inquisara</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
     background: white;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
     font-size: 24pt;
+    font-weight: 400;
+    color: #000;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.links a {
+    font-size: 18pt;
+    color: #000;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+    opacity: 0.5;
+}
+
+.gausyn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.doe {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.7px;
 }
 </style>
 </head>
 
 <body>
-Inquisara, Summer 2026.
-</body>
+    <div class="container">
+        <div class="title">Inquisara</div>
 
+        <div class="links">
+            <a href="https://www.gausyn.com" class="gausyn">
+                Gausyn
+            </a>
+
+            <a href="https://www.doe.care" class="doe">
+                Doe
+            </a>
+        </div>
+    </div>
+</body>
 </html>
